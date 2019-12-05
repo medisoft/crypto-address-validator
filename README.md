@@ -5,7 +5,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 
 Did you know? This package is under active development by Swyftx. Swyftx allows you to buy and sell Bitcoin, Etherium, Ripple and many more assets using Australian Dollars. [Buy Bitcoin in Australia](https://swyftx.com.au)
 
-**File size is ~82 kB (minifed and gzipped - ~70.7% smaller)**.
+**File size is ~109 kB (minifed and gzipped - ~70.7% smaller)**.
 
 ## Installation
 
@@ -21,12 +21,13 @@ npm install wallet-address-validator
 
 ## API
 
-##### validate (address [, currency = 'bitcoin'[, networkType = 'prod']])
+##### validate (address [, currency = 'bitcoin'[, networkType = 'prod' [, addressType = ['all']]])
 
 ###### Parameters
 * address - Wallet address to validate.
 * currency - Optional. Currency name or symbol, e.g. `'bitcoin'` (default), `'litecoin'` or `'LTC'`
 * networkType - Optional. Use `'prod'` (default) to enforce standard address, `'testnet'` to enforce testnet address and `'both'` to enforce nothing.
+* addressType - Optional. Specifies what version of the address should be validated. Defaults to `'legacy'`, but can be changed on a per asset basis.
 
 > Returns true if the address (string) is a valid wallet address for the crypto currency specified, see below for supported currencies.
 
