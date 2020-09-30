@@ -134,6 +134,10 @@ describe('WAValidator.validate()', function () {
             valid('Rq3JYs9bjBhBsAkYBEWZTPg9Dk57evFbYh', 'RDD')
             valid('Rmhzj2GptZxkKBMqbUL6VjFcX8npDneAXR', 'RDD')
             // TODO: NEED A REDDCOIN TESTNET ADDRESS
+
+            // p2sh addresses
+            valid('3Jj99PWmQ5QfAhzxTX67ygiLZD6ySiFXQy', 'reddcoin')
+            valid('n3TuxgJSi4dYNYjhN4Vxr1Da4SRzopN6pZ', 'reddcoin', 'testnet')
         })
 
         it('should return true for correct beavercoin addresses', function () {

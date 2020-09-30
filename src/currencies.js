@@ -72,7 +72,7 @@ const CURRENCIES = [ {
     }, {
         name: 'ReddCoin',
         symbol: 'rdd',
-        addressTypes: { prod: [ '1e', '16' ], testnet: [ '71', 'c4' ] },
+        addressTypes: { prod: [ '3d', '05' ], testnet: [ '6f', 'c4' ] },
         validator: BTCValidator
     }, {
         name: 'BeaverCoin',
