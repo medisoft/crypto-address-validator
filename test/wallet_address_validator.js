@@ -84,7 +84,10 @@ describe('WAValidator.validate()', function () {
             // Cash addresses
             valid('bitcoincash:pp8skudq3x5hzw8ew7vzsw8tn4k8wxsqsv0lt0mf3g', 'bitcoincash', 'both', [ 'all' ])
             valid('bitcoincash:pp8skudq3x5hzw8ew7vzsw8tn4k8wxsqsv0lt0mf3g', 'bitcoincash', 'both', [ 'cashaddr' ])
-            valid('bitcoincash:qph5kuz78czq00e3t85ugpgd7xmer5kr7c5f6jdpwk', 'bitcoincash', 'both', [ 'all' ])
+            valid('bitcoincash:qph5kuz78czq00e3t85ugpgd7xmer5kr7c5f6jdpwk', 'bitcoincash', 'prod', [ 'all' ])
+            valid('bitcoincash:qph5kuz78czq00e3t85ugpgd7xmer5kr7c5f6jdpwk', 'BCH', 'prod', [ 'all' ])
+            valid('qph5kuz78czq00e3t85ugpgd7xmer5kr7c5f6jdpwk', 'bitcoincash', 'prod', [ 'all' ])
+            valid('qph5kuz78czq00e3t85ugpgd7xmer5kr7c5f6jdpwk', 'BCH', 'prod', [ 'all' ])
         })
 
         it('should return true for correct litecoin addresses', function () {
@@ -99,7 +102,10 @@ describe('WAValidator.validate()', function () {
             valid('2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7', 'litecoin', 'testnet')
             valid('QW2SvwjaJU8LD6GSmtm1PHnBG2xPuxwZFy', 'litecoin', 'testnet')
             valid('QjpzxpbLp5pCGsCczMbfh1uhC3P89QZavY', 'litecoin', 'testnet')
-            valid('tltc1qegtmututq0eyq9aap8lfkhqhdpdsnprwr9fz4h', 'litecoin', 'both', ['all'])
+
+            // segwit addresses
+            valid('ltc1q00kq9yg0558s90gcs63kttc7f7f20zlutpxha8', 'litecoin', 'prod', ['all'])
+            valid('tltc1qegtmututq0eyq9aap8lfkhqhdpdsnprwr9fz4h', 'litecoin', 'testnet', ['all'])
         })
 
         it('should return true for correct peercoin addresses', function () {
