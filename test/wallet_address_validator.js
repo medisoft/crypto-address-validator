@@ -127,17 +127,17 @@ describe('WAValidator.validate()', function () {
             valid('2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7', 'dogecoin', 'testnet')
         })
 
-        it.only('should return true for correct reddcoin addresses', function () {
+        it('should return true for correct reddcoin addresses', function () {
             valid('Rq3JYs9bjBhBsAkYBEWZTPg9Dk57evFbYh', 'reddcoin')
             valid('Rmhzj2GptZxkKBMqbUL6VjFcX8npDneAXR', 'reddcoin')
             valid('Rd76tqsePaB8KBhSuZrYuRUrwTKCQ25TPt', 'reddcoin')
             valid('Rq3JYs9bjBhBsAkYBEWZTPg9Dk57evFbYh', 'RDD')
             valid('Rmhzj2GptZxkKBMqbUL6VjFcX8npDneAXR', 'RDD')
-            // TODO: NEED A REDDCOIN TESTNET ADDRESS
+            valid('myp5kyzDw1w3S4X2jrf4wgokSxBjA54o7h', 'RDD', 'testnet')
 
             // p2sh addresses
             valid('3Jj99PWmQ5QfAhzxTX67ygiLZD6ySiFXQy', 'reddcoin')
-            valid('n3TuxgJSi4dYNYjhN4Vxr1Da4SRzopN6pZ', 'reddcoin', 'testnet')
+            valid('2MucsaJyLACxWn1fgZegs7h5KZ8FTCENdVZ', 'reddcoin', 'testnet')
         })
 
         it('should return true for correct beavercoin addresses', function () {
